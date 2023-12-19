@@ -12,3 +12,17 @@
 7. 更新 Ingress 的配置，根据新部署的应用的名称，在 ingress 的配置文件中增加一条路由信息
 8. 更新 PowerDNS，向其中插入一条 DNS 记录，IP 地址是边缘节点的 IP 地址。关于边缘节点，请查看 边缘节点配置
 9. Jenkins 调用 kubernetes 的 API，部署应用
+
+
+
+启动jenkins：
+docker run \
+  -d \
+  -u root \
+  -p 8080:8080 \
+  -v /var/jenkins_home:/var/jenkins_home \
+  -v /usr/bin/docker:/usr/bin/docker \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkins/jenkins
+
+  
