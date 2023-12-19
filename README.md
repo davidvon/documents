@@ -3,4 +3,5 @@
 
 #### SpringCloud云原生
 * https://github.com/davidvon/documents/blob/main/Jenkins%2Bpipeline%2BK8S.md
-
+#### 使用 minikube 创建开发环境
+* https://www.iuskye.com/2023/05/14/create-minikube-development/
